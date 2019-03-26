@@ -154,7 +154,7 @@ export default class VirtualizedList {
 
     morphdom(this.content, fragment, {
       childrenOnly: true,
-      getNodeKey: node => node.nodeIndex,
+      getNodeKey: node => node.id,
     });
 
     this.onRowsRendered({
